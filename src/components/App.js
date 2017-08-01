@@ -15,6 +15,7 @@ class App extends Component {
   }
   render() {
     const url = 'https://api.flickr.com/services/feeds/photos_public.gne?format=json';
+    console.log(this.props);
 
     if (this.props.hasErrored) {
       return (
@@ -77,8 +78,8 @@ class App extends Component {
 const mapStateToProps = (state) => {
   return {
     cards: state.cards,
-    hasErrored: state.itemsHasErrored,
-    isLoading: state.itemsIsLoading
+    hasErrored: state.hasErrored,
+    isLoading: state.isLoading
   };
 };
 
