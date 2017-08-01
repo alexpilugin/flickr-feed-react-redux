@@ -9,7 +9,7 @@ class App extends Component {
   componentWillMount() {
     console.log('componentWillMount') //once at beginning
     //Callback Function: https://www.flickr.com/services/api/response.json.html nojsoncallback=1
-    const url = 'https://api.flickr.com/services/feeds/photos_public.gne?format=json&nojsoncallback=1';
+    const url = 'https://api.flickr.com/services/feeds/photos_public.gne?format=json';
     this.props.fetchData(url);
 
   }

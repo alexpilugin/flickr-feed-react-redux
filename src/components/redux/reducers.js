@@ -50,10 +50,10 @@ export function itemsFetchData(url) {
     dispatch(itemsIsLoading(true));
 
     let fetchBody = api => fetchJsonp(url, {
-      jsonpCallback: 'jsonFlickrFeed',
-      jsonpCallbackFunction: '' //'jsonFlickrFeed'
+      jsonpCallback: ' ',
+      jsonpCallbackFunction: 'jsonFlickrFeed' //'jsonFlickrFeed'
     })
-      .then(res => res.ok ? res : res.json().then(err => Promise.reject(err)));
+      //.then(res => res.ok ? res : res.json().then(err => Promise.reject(err)));
 
     fetchBody(url)
       .then((response) => {
