@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Neucha);
+
+$header_color: white;
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;	
+	box-sizing: border-box; 
+}
+
+.flexWrap {  
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+ 
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+}
+
+.App {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.App_header {
+  background-color: #222;
+  color: $header_color;
+  width: 100%;
+  clear: both;
+  margin: 0;
+    h2 {
+      font-family: Neucha, cursive;
+      padding-top: 8px;
+      a {
+        text-decoration: none;
+        color: $header_color;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      a:visited {
+        text-decoration: none;
+        color: $header_color;
+      }
+    }
+}
+
+.App_intro {
+  font-size: large;
+}
+
+/* max-width 640px, mobile-only styles */
+@media (max-width: 40.063em) { 
+      .App {
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+    }
+}
+
+/* min-width 641px and max-width 1024px */
+@media (min-width: 40.063em) and (max-width: 64em) {
+    .App {
+        width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} 
+/* min-width 1025px, large screens */
+@media (min-width: 64.063em) { 
+    .App {
+        width: 96vw;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex; /* or inline-flex */
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+} 

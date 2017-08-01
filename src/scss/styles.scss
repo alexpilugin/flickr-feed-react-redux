@@ -1,0 +1,13 @@
+@import "node_modules/normalize-scss/sass/_normalize";
+@include normalize();
+@import "../components/scss/App.scss";
+@import "../components/scss/Card.scss";
+
+*, *:before, *:after {
+  box-sizing: border-box !important;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background: #EEE;
+}
